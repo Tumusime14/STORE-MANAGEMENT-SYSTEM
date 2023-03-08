@@ -42,5 +42,9 @@ public class Manager {
     public void setAddress(String address) {
         this.address = address;
     }
+    public void purchaseProduct(int productId,String productName,int quantity){
+
+
+    }
 
 }
