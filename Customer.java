@@ -1,17 +1,16 @@
-public class Customer {
+public class Customer extends Stock{
     private int customerId;
     private String customerName;
     private double balance = 10000;
     private String address;
     private String phone;
 
-    public Customer(int customerId, String customerName,double balance) {
-        this.customerId = customerId;
-        this.customerName = customerName;
+    public Customer(int productId, int quantity, int shopId, double balance) {
+        super(productId, quantity, shopId);
         this.balance = balance;
     }
 
-    public int getCustomerId() {
+       public int getCustomerId() {
         return customerId;
     }
 
@@ -49,7 +48,7 @@ public class Customer {
         this.phone = phone;
     }
 
-  public void buyProduct(Product product, Customer customer) {
+ public void buyProduct(Product product, Customer customer) {
     double price = product.getPrice();
     double balance = customer.getBalance();
     

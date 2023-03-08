@@ -1,12 +1,10 @@
 public class Stock {
     public int productId;
     public int quantity;
-    public int shopId;
-
+    
     public Stock(int productId, int quantity, int shopId) {
         this.productId = productId;
         this.quantity = quantity;
-        this.shopId = shopId;
     }
 
     public int getProductId() {
@@ -25,12 +23,5 @@ public class Stock {
         this.quantity = quantity;
     }
 
-    public int getShopId() {
-        return shopId;
-    }
-
-    public void setShopId(int shopId) {
-        this.shopId = shopId;
-    }
-
+    
 }

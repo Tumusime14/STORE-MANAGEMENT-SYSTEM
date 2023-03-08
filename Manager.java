@@ -43,7 +43,7 @@ public class Manager {
         this.address = address;
     }
     public void purchaseProduct(int productId,String productName,int quantity){
-
+    Product in = Product.purchaseProduct(double price,int quantity); 
 
     }
 

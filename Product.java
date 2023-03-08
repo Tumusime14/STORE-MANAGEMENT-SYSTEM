@@ -6,8 +6,9 @@ public class Product extends Stock{
     private int productId;
     private String productName;
     private int quantity;
+    private double price;
 
-    public Product(int productId,int shopId, String productName, int quantity) {
+    public Product(int productId,String productName) {
         super(productId, quantity, shopId);
         this.productId = productId;
         this.shopId = shopId;
@@ -61,6 +62,10 @@ public int getStock() {
 }
 
 public void setStock(int i) {
+}
+
+public static Product purchaseProduct() {
+    return null;
 }
 
 }
