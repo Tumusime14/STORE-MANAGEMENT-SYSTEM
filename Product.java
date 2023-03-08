@@ -46,7 +46,16 @@ public class ProductList{
     }
 }
 public boolean deleteProduct(int productId){
+    return false;
     
+}
+
+public double getPrice() {
+    return 0;
+}
+
+public int getStock() {
+    return 0;
 }
 
 }
