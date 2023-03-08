@@ -18,8 +18,8 @@ public class Transaction extends Product {
     public void Purchase() {
         double price;
         int quantity;
-    
-    double getPrice() {
+    }
+    public double getPrice() {
         return price;
     }
     public void setPrice(double price) {
@@ -32,7 +32,6 @@ public class Transaction extends Product {
         this.quantity = quantity;
 
         System.out.println(quantity);
-    }
     
 }
 }

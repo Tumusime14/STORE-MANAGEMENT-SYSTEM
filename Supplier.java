@@ -1,17 +1,20 @@
-public class Supplier {
-    private String supplierId;
+public class Supplier extends Manager{
+    private static String supplierId;
     private String supplierName;
     private int supplierTelephone;
     private String SupplierAddress;
     
-    public Supplier(String supplierId, String supplierName, int supplierTelephone, String supplierAddress) {
+   
+
+    public Supplier(int id, String name, int phoneNum, String address, String supplierId, String supplierName,
+            int supplierTelephone) {
+        super(id, name, phoneNum, address);
         this.supplierId = supplierId;
         this.supplierName = supplierName;
         this.supplierTelephone = supplierTelephone;
-        SupplierAddress = supplierAddress;
     }
 
-    public String getSupplierId() {
+    public static String getSupplierId() {
         return supplierId;
     }
 
