@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
+import Product.ProductList;
+
 public class App {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a number from 1 to 4:");
+        System.out.println("Please enter a number from 1 to 5:");
         System.out.println("1. Purchase from Supplier");
         System.out.println("2. Sell product to customer");
         System.out.println("3. Pay supplier");
@@ -19,6 +21,7 @@ public class App {
             System.out.println("You have successful stored product");
             break;
           case 2:
+          Transaction.generateReceipt(Product[] products, )
             System.out.println("You chose option 2");
             break;
           case 3:
