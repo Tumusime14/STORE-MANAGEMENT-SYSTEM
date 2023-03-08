@@ -7,7 +7,9 @@ public class App {
         System.out.println("1. Purchase from Supplier");
         System.out.println("2. Sell product to customer");
         System.out.println("3. Pay supplier");
-        System.out.println("1. Purchase from Supplier");
+        System.out.println("4. Purchase from Supplier");
+        System.out.println("5. Terminate");
+
         int choice = scanner.nextInt();
     
         switch (choice) {
@@ -24,6 +26,9 @@ public class App {
             break;
           case 4:
             System.out.println("You chose option 4");
+            break;
+            case 5:
+            System.exit(0);
             break;
           default:
             System.out.println("Invalid choice");

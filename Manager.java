@@ -46,5 +46,9 @@ public class Manager {
     Product in = Product.purchaseProduct(double price,int quantity); 
 
     }
+    public void paySupplier(double price, int quantity) {
+        double totalCost = price * quantity;
+        System.out.println("Payment of $" + totalCost + " has been made to the supplier.");
+    }
 
 }
