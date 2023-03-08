@@ -43,7 +43,7 @@ public class ProductList{
     private List<Product> productList = new ArrayList<>();
 
     public void Addproduct(int productId, String productName,int quantity){
-        Product product = new Product(productId, quantity, productName, quantity);
+        Product product = new Product(productId, productName);
         productList.add(product);
 
     }
