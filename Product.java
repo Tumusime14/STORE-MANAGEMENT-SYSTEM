@@ -1,17 +1,12 @@
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Product extends Stock{
     private int productId;
     private String productName;
-    private int quantity;
+    private static int quantity;
     private double price;
 
     public Product(int productId,String productName) {
-        super(productId, quantity, shopId);
+        super(productId, quantity, productId);
         this.productId = productId;
-        this.shopId = shopId;
         this.productName = productName;
         this.quantity = quantity;
     }
@@ -39,8 +34,6 @@ public class Product extends Stock{
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-public class ProductList{
-    private List<Product> productList = new ArrayList<>();
 
     public void Addproduct(int productId, String productName,int quantity){
         Product product = new Product(productId, productName);

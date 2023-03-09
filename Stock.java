@@ -1,9 +1,11 @@
-public class Stock {
+public class Stock extends Product{
     public int productId;
     public int quantity;
-    
-    public Stock(int productId, int quantity, int shopId) {
-        this.productId = productId;
+        
+
+    public Stock(int productId, String productName, int productId2, int quantity) {
+        super(productId, productName);
+        productId = productId2;
         this.quantity = quantity;
     }
 
@@ -22,6 +24,12 @@ public class Stock {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
+   
+        public void double calculateTotal(Product products) {
+            double total = 0.0;
+     Product product;
+    total += product.getPrice();
+          return total;  }
+            
+        }
     
-}
