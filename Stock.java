@@ -1,6 +1,6 @@
 public class Stock extends Product{
     public int productId;
-    public int quantity;
+    public static int quantity;
         
 
     public Stock(int productId, String productName, int productId2, int quantity) {

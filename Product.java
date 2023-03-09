@@ -1,11 +1,10 @@
 public class Product extends Stock{
-    private int productId;
-    private String productName;
-    private static int quantity;
+   
     private double price;
+    private String productName;
 
-    public Product(int productId,String productName) {
-        super(productId, quantity, productId);
+    public Product(int productId, String productName) {
+        super(productId,productName, quantity, productId);
         this.productId = productId;
         this.productName = productName;
         this.quantity = quantity;
@@ -37,7 +36,7 @@ public class Product extends Stock{
 
     public void Addproduct(int productId, String productName,int quantity){
         Product product = new Product(productId, productName);
-        productList.add(product);
+        product.add(product);
 
     }
 }

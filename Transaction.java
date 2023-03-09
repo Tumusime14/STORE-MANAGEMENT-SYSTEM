@@ -1,9 +1,9 @@
-public class Transaction extends Product {
+public class Transaction  {
     private double price;
     private int quantity;
 
     public Transaction(int productId, String productName, double price, int quantity) {
-        super(productId, productName);
+        super();
         this.price = price;
         this.quantity = quantity;
     }
