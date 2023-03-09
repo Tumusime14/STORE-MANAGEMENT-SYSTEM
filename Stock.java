@@ -13,7 +13,7 @@ public class Stock{
     }
     public void addProduct(Product product){
         products[count++] = product;
-        System.out.printf("Product  successfull added!  ");
+        System.out.println("Product  successfull added!  ");
     }
             
         }
