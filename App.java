@@ -14,13 +14,16 @@ public class App {
 
         Stock st1 = new Stock(2, 900);
         Product p1 = new Product(001,5,"Beans",1200,7);
+        Product p2 = new Product(002,8,"Flour",1500,2);
     
         switch (choice) {
           case 1:
-              System.out.println("yeah");
+              System.out.println(p1);
+              System.out.println(p2);
             break;
           case 2:
               st1.addProduct(p1);
+              st1.addProduct(p2);
             break;
           case 3:
             System.out.println("You chose option 3");

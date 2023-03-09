@@ -12,7 +12,6 @@ public class Stock{
         products = new Product[10];
     }
     public void addProduct(Product product){
-
         products[count++] = product;
         System.out.printf("Product  successfull added!  ");
     }
