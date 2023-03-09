@@ -5,8 +5,8 @@ public class Customer extends Stock{
     private String address;
     private String phone;
 
-    public Customer(int productId, int quantity, int shopId, double balance) {
-        super(productId, quantity, shopId);
+    public Customer(int productId, int quantity, double balance) {
+        super(productId, quantity);
         this.balance = balance;
     }
 
@@ -48,17 +48,5 @@ public class Customer extends Stock{
         this.phone = phone;
     }
 
- public void buyProduct(Product product, Customer customer) {
-    double price = product.getPrice();
-    double balance = customer.getBalance();
-    
-    if (balance >= price) {
-        customer.setBalance(balance - price); 
-        product.setStock(product.getStock() - 1);
-        System.out.println("Purchase successful! Your new balance is: " + customer.getBalance());
-    } else {
-        
-        System.out.println("Purchase failed! You do not have enough balance to buy this product.");
-    }
-}
+
 }

@@ -42,10 +42,8 @@ public class Manager {
     public void setAddress(String address) {
         this.address = address;
     }
-    public void purchaseProduct(int productId,String productName,int quantity){
-    Product in = Product.purchaseProduct(double price,int quantity); 
 
-    }
+
     public void paySupplier(double price, int quantity) {
         double totalCost = price * quantity;
         System.out.println("Payment of $" + totalCost + " has been made to the supplier.");

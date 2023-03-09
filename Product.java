@@ -1,21 +1,20 @@
 public class Product extends Stock{
-   
-    private double price;
+
     private String productName;
 
-    public Product(int productId, String productName) {
-        super(productId,productName, quantity, productId);
+    private int productId;
+
+    private static int quantity;
+    private double price;
+
+
+    public Product(int productId,int quantity, String productName,double price,int size) {
+        super(0, quantity);
         this.productId = productId;
         this.productName = productName;
         this.quantity = quantity;
-    }
 
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
+        this.price = price;
     }
 
     public String getProductName() {
@@ -26,38 +25,30 @@ public class Product extends Stock{
         this.productName = productName;
     }
 
-    public int getQuantity() {
+    public int getProductId() {
+        return productId;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
+    }
+
+    public static int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public static void setQuantity(int quantity) {
+        Product.quantity = quantity;
     }
 
-    public void Addproduct(int productId, String productName,int quantity){
-        Product product = new Product(productId, productName);
-        product.add(product);
-
+    public double getPrice() {
+        return price;
     }
-}
-public boolean deleteProduct(int productId){
-    return false;
-    
-}
 
-public double getPrice() {
-    return 0;
-}
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
-public int getStock() {
-    return 0;
-}
 
-public void setStock(int i) {
-}
-
-public static Product purchaseProduct() {
-    return null;
-}
 
 }

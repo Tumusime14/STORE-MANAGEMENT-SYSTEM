@@ -1,35 +1,21 @@
-public class Stock extends Product{
-    public int productId;
-    public static int quantity;
-        
+import java.util.Arrays;
 
-    public Stock(int productId, String productName, int productId2, int quantity) {
-        super(productId, productName);
-        productId = productId2;
-        this.quantity = quantity;
-    }
+public class Stock{
 
-    public int getProductId() {
-        return productId;
-    }
+    private int stocksize;
+    private Product [] products;
+    private int quantity;
+    private int count;
 
-    public void setProductId(int productId) {
-        this.productId = productId;
-    }
+    public Stock(int stocksize, int quantity) {
 
-    public int getQuantity() {
-        return quantity;
+        products = new Product[10];
     }
+    public void addProduct(Product product){
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+        products[count++] = product;
+        System.out.printf("Product  successfull added!  ");
     }
-   
-        public void double calculateTotal(Product products) {
-            double total = 0.0;
-     Product product;
-    total += product.getPrice();
-          return total;  }
             
         }
     
